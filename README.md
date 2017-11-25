@@ -1,8 +1,8 @@
 # Project 2 - Flix
 
-**Flix** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+**Flix**is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -12,6 +12,8 @@ The following **required** functionality is complete:
 - [X] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [X] User sees a loading state while waiting for the movies API.
 - [X] User can pull to refresh the movie list.
+- [X] User can tap a cell to see a detail view (+5pts)
+- [X] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView (+5pts)
 
 The following **optional** features are implemented:
 
@@ -24,10 +26,14 @@ The following **optional** features are implemented:
 - [ ] Customize the selection effect of the cell.
 - [ ] Customize the navigation bar.
 - [ ] Customize the UI.
+- [ ] User can tap a poster in the collection view to see a detail screen of that movie (+3pts)
+- [ ] In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer (+3pts)
+- [ ] Customize the navigation bar (+1pt)
+- [ ] List in any optionals you didn't finish from last week (+1-3pts)
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] Display the rating of the movie
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -38,7 +44,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./FlixWalkthrough1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./FlixWalkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -54,7 +60,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2017] [Allison Reiss]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
