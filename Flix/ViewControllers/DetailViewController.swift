@@ -14,6 +14,7 @@ enum MovieKeys {
     static let overview = "overview"
     static let backdropPath = "backdrop_path"
     static let posterPath = "poster_path"
+    static let rating = "vote_average"
 }
 
 class DetailViewController: UIViewController {
@@ -23,6 +24,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
     
     var movie: [String: Any]?
     
@@ -33,6 +35,9 @@ class DetailViewController: UIViewController {
             titleLabel.text = movie[MovieKeys.title] as? String
             releaseDateLabel.text = movie[MovieKeys.releaseDate] as? String
             overviewLabel.text = movie[MovieKeys.overview] as? String
+            let rating = movie[MovieKeys.rating] as! NSNumber
+            ratingLabel.text = String(describing: rating) + "/10 ⭐️"
+            
             let backdropPathString = movie[MovieKeys.backdropPath] as! String
             let posterPathString = movie[MovieKeys.posterPath] as! String
             let baseURLString = "https://image.tmdb.org/t/p/w500"
