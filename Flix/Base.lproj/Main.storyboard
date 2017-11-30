@@ -25,7 +25,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8nj-Ac-Qre">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.80821700510000005" green="0.044492094019999998" blue="0.031545504000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="40L-KM-9Rb">
                                     <rect key="frame" x="0.0" y="255" width="320" height="37"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -252,12 +252,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="158" height="237"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-kN-aCa">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-kN-aCa">
                                                     <rect key="frame" x="0.0" y="0.0" width="158" height="237"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0Jq-kN-aCa" secondAttribute="bottom" id="9C1-UU-DA9"/>
+                                            <constraint firstItem="0Jq-kN-aCa" firstAttribute="leading" secondItem="Zdq-aK-ibv" secondAttribute="leading" id="MoA-3P-dbJ"/>
+                                            <constraint firstItem="0Jq-kN-aCa" firstAttribute="top" secondItem="Zdq-aK-ibv" secondAttribute="top" id="isb-jk-E8o"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Jq-kN-aCa" secondAttribute="trailing" id="mOt-NP-ZnG"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="posterImageView" destination="0Jq-kN-aCa" id="ejK-Ek-Wrw"/>
                                         </connections>
