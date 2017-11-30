@@ -12,6 +12,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     var movies: [[String: Any]] = []
     
     override func viewDidLoad() {
@@ -31,8 +32,9 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource, UIC
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PosterCell", for: indexPath) as! PosterCell
         let movie = movies[indexPath.item]
         if let posterPathString = movie["poster_path"] as? String {
-           let baseURLString = "https://image.tmdb.org/t/p/w500"
+            let baseURLString = "https://image.tmdb.org/t/p/w500"
             let posterURL = URL(string: baseURLString + posterPathString)!
+
             cell.posterImageView.af_setImage(withURL: posterURL)
         }
         return cell
