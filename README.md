@@ -14,6 +14,9 @@ The following **required** functionality is complete:
 - [X] User can pull to refresh the movie list.
 - [X] User can tap a cell to see a detail view (+5pts)
 - [X] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView (+5pts)
+- The following screens use AutoLayout to adapt to various orientations and screen sizes
+- [ ] Movie feed view (+3pt)
+- [ ] Detail view (+2pt)
 
 The following **optional** features are implemented:
 
@@ -30,6 +33,8 @@ The following **optional** features are implemented:
 - [ ] In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer (+3pts)
 - [ ] Customize the navigation bar (+1pt)
 - [ ] List in any optionals you didn't finish from last week (+1-3pts)
+- [ ] Dynamic Height Cells (+1)
+- [ ] Collection View AutoLayout (+2)
 
 The following **additional** features are implemented:
 
